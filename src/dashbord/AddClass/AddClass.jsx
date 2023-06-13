@@ -8,7 +8,7 @@ const AddClass = () => {
     
     console.log(data);
     
-        fetch('https://summer-school-server-six.vercel.app/classes',{
+        fetch(' https://summer-school-server-ten.vercel.app/classes',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

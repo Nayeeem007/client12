@@ -7,7 +7,7 @@ import Home from "../pages/home/home/Home";
 import Instructors from "../pages/loadData/Instructors";
 import Classes from "../pages/loadData/Classes";
 import Login from "../pages/login/Login";
-import SignUp from "../pages/signUp/SignUp";
+import SignUp from "../pages/SignUp/SignUp";
 import Dashboard from "../dashbord/Dashboard";
 import MyCart from "../dashboardPages/MyCart/MyCart";
 import PrivateRoute from "./PrivateRoute";
@@ -72,7 +72,7 @@ import Payment from "../dashboardPages/Payment/Payment";
         {
           path: 'update/:id',
           element: <AdminRoute><ManageClass></ManageClass></AdminRoute>,
-          loader: ({params})=>fetch(`https://summer-school-server-six.vercel.app/classes/${params.id}`)
+          loader: ({params})=>fetch(` https://summer-school-server-ten.vercel.app/classes/${params.id}`)
         },
         {
           path: 'allCourse',

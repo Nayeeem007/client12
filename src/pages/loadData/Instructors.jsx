@@ -5,7 +5,7 @@ const Instructors = () => {
     useTitle('Instructors')
     const [teachers, setTeachers] = useState([]);
     useEffect(() => {
-        fetch(`https://summer-school-server-six.vercel.app/instructors`)
+        fetch(` https://summer-school-server-ten.vercel.app/instructors`)
             .then(res => res.json())
             .then(data => setTeachers(data))
     }, [])
